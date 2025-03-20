@@ -202,11 +202,13 @@ footer{
     margin-bottom: 15px;
     text-align: center;
     color: white;
+    
 }
 .footer-content p{
-    width:190px;
+    color: white;
     margin: auto;
     padding: 7px;
+    font-size: 18px;
 }
 .footer-content ul{
     text-align: center;
@@ -248,7 +250,7 @@ footer{
     color: white;
     font-size: 25px;
 }
-a{
+.list li a{
     text-decoration: none;
 }
 a:hover{
