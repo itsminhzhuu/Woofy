@@ -42,7 +42,7 @@ h1{
     /* background: var(--white); */
     z-index: 1;
 }
-.container {
+#middle-container {
     position: relative;
     z-index: 2;
 }
@@ -152,16 +152,123 @@ p{
 .pet-3{
     background-image: url('/pics/Featured-product/twodog.jfif');
 }
+
 /*check out the doggies */
-.container-heading {
-    padding: 15px 9%;
-    padding-bottom: 100px;
+#letter-h1 {
+    color: black;
+    font-weight: bold;
 }
-.container-heading .heading{
-    text-align: center;
-    padding-bottom: 15px ;
+.card-img-tops {
+    border-radius: 30px;
+    padding: 20px;
+}
+#card-title-h5 {
+    color: blue;
+    font-size: 30px;
+    
+}
+#card-text-p {
+    font-size: 20px;
+}
+#card-pic {
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    
+}
+#card-bodyss {
+    padding: 25px;
+    margin-top: -15px;
+}
+#button-checkout{
+    border-radius: 50px;
+    width: 120px;
 }
 
+/* footer */
+footer{
+    background: #343434;
+    padding-top: 50px;
+}
+#container-footer{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+#h3-footer{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #f18930;
+}
+.social-icons i:hover{
+    color: #f18930;
+}
+.bottom-bar{
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
 
 
 

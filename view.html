@@ -56,7 +56,7 @@
 
     <!--Middle-banner-->
     <div class="container-fluid middle-banner">
-      <div class="container py-5 h-75">
+      <div class="container py-5 h-75" id="middle-container">
         <div class="row h-100">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-5">
             <div class="letter mt-5">
@@ -160,41 +160,240 @@
       </section>
     </div>
     <!--check out the doggies-->
-    <div class="container-heading">
-      <h1 class="heading">Check out for your beloved doggies here :)</h1>
-      <div class="box-container">
-        <div class="box">
-          <img src="/pics/beagle/beagle.jfif" alt="">
-          <h3>beagle</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
-          <a href="#" class="btn">Read mores</a>
+    <div class="container py-5">
+      <h1 id="letter-h1" class="text-center">Check out for your beloved doggies here :)</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/Product-show/beagle.jfif" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Samoyed</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
         </div>
-        <div class="box">
-          <img src="/pics/beagle/beagle.jfif" alt="">
-          <h3>beagle</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
-          <a href="#">Read mores</a>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/Product-show/chihuahua.jpg" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Chihuahua</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
         </div>
-        <div class="box">
-          <img src="/pics/beagle/beagle.jfif" alt="">
-          <h3>beagle</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
-          <a href="#" class="btn">Read mores</a>
+        <div class="col">
+          <div class="card h-100" id="card-pic">
+            <img src="/pics/Product-show/German Shepherd.jpg" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">German Shepherd</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
         </div>
-        <div class="box">
-          <img src="/pics/beagle/beagle.jfif" alt="">
-          <h3>beagle</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
-          <a href="#" class="btn">Read mores</a>
+        <div class="col">
+          <div class="card h-100" id="card-pic">
+            <img src="/pics/Product-show/golden retriever.jpg" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Golden retriever</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
         </div>
-        <div class="box">
-          <img src="/pics/beagle/beagle.jfif" alt="">
-          <h3>beagle</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
-          <a href="#" class="btn">Read mores</a>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/Product-show/husky.jpg" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">husky</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="card-pic">
+            <img src="/pics/Product-show/pit bull.jpg" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Pit Bull</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/Product-show/Pomeranian.jpg" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Pomeranian</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/Product-show/pug.jpg" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Pug</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/Product-show/shiba.jpg" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Shiba</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/beagle/beagle.jfif" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Samoyed</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/beagle/beagle.jfif" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Samoyed</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/beagle/beagle.jfif" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Samoyed</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/beagle/beagle.jfif" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Samoyed</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/beagle/beagle.jfif" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Samoyed</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="card-pic">
+            <img src="/pics/beagle/beagle.jfif" alt="" class="card-img-tops">
+            <div class="card-body" id="card-bodyss">
+              <h5 class="card-title" id="card-title-h5">Samoyed</h5>
+              <p class="card-text" id="card-text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore enim atque distinctio minima totam!</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <i class="fa-solid fa-hand-point-right fs-1 mb-1"></i>
+              <button class=" btn btn-danger" id="button-checkout">Read More</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!--footer-->
+    <footer>
+      <div class="container" id="container-footer">
+        <div class="footer-content">
+          <h3 id="h3-footer">Contact Us</h3>
+          <p class="letter-p">Email: reach.xd25@gmail.com</p>
+          <p class="letter-p">Phone:+855 086769670</p>
+          <p class="letter-p">Address: National Road 5 S/K Preaek Preah Sdaach, Battambang City</p>
+        </div>
+        <div class="footer-content">
+          <h3 id="h3-footer">Quick liks</h3>
+          <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 id="h3-footer">Follow Us</h3>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&copy; 2025 Woofy Store - All Rights Reserved </p>
+
+      </div>
+    </footer>
     
     
     
