@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link logo-->
+    <link rel="icon" href="/pics/Logo/logo no bg.png" />
+    <title>Woofy shop</title>
+    <!--link css-->
+    <link rel="stylesheet" href="/Style/style.css" />
+    <!--link Javascript-->
+    <!--link CSS BootStript and JavaScript-->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--link font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!--link AOS JS and CSS-->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+  </head>
+  <body>
+    <!--header-->
+    <div class="container-fluid shadow fixed-top bg-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl">
+          <div class="navbar-brand"><h1>Woofy Shop</h1></div>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#show">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div id="show" class="collapse navbar-collapse justify-content-evenly">
+            <ul class="list-unstyled menu">
+              <li><a class="text-success" href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="d-flex">
+              <input type="text" placeholder="Search" class="form-control" id="search">
+              <button class="btn btn-outline-info mx-3">Search</button>
+              <div class="d-flex icon">
+                <i class="fa-solid fa-bag-shopping fs-2"></i>
+                <span>0</span>
+                <i class="fa-solid fa-user fs-2 mx-3"></i>
+                <i class="fa-solid fa-heart fs-2"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--Middle-banner-->
+    <div class="container-fluid middle-banner">
+      <div class="container py-5 h-75">
+        <div class="row h-100">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-5">
+            <div class="letter mt-5">
+              <h2>Welcome to Woofy Shop <i class="fa-solid fa-dog text-dark"></i></h2>
+              <p>All emloyees of Club Pups have been carefully selected bosed on our motto
+                <span>"taking care of dogs as if they were out own!!!</span>
+              </p>
+              <button class="btn btn-outline-primary mt-2">About us</button>
+              <button class="btn btn-outline-danger mt-2" id="controll">Contact Us</button>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="image">
+              <img src="/pics/Banner/dog-remove.png" alt />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--clip-->
+    <div class="container-fluid mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+            <div class="card" id="card-clip">
+              <div class="clip-icon">  
+                <span></span>
+                <i class="fa-solid fa-paw fs-1 text-white"></i>
+              </div>
+              <div class="card-body mt-2 h-100">
+                <p class="fs-4 text-center fw-bold ">Pet-friendly Materials</p>
+                <p class="text-center">Made with safe, non-toxic materials to keep your pets healthy and happy</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+            <div class="card" id="card-clip">
+              <div class="clip-icon bg-secondary">  
+                <span class="bg-secondary"></span>
+                <i class="fa-solid fa-truck-fast fs-1 text-light"></i>
+              </div>
+              <div class="card-body mt-2 h-100">
+                <p class="fs-4 text-center fw-bold">Free Shippings</p>
+                <p class="text-center">Enjoy free delivery on all orders over $100 for added convenience</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+            <div class="card" id="card-clip">
+              <div class="clip-icon bg-primary">  
+                <span class="bg-primary"></span>
+                <i class="fa-solid fa-credit-card fs-1 text-white"></i>
+              </div>
+              <div class="card-body mt-2 h-100">
+                <p class="fs-4 text-center fw-bold">Flexible Payments</p>
+                <p class="text-center">Choose from various payment options to suit your budget</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+            <div class="card" id="card-clip">
+              <div class="clip-icon bg-danger">  
+                <span class="bg-danger"></span>
+                <i class="fa-solid fa-dog fs-1 text-white"></i>
+              </div>
+              <div class="card-body mt-2 h-100">
+                <p class="fs-4 text-center fw-bold">Pets</p>
+                <p class="text-center">Show pony anti-pattern, for it a simple lift and shift job the right info at the right time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Featured Products-->
+    <div class="body-products">
+      <div class="contianer">
+        <div class="name-product mt-3">
+          <h1 class="text-center text-white" id="little-product">Featured Products</h1>
+        </div>
+      </div>
+      <section id="container">
+        <div class="product-card">
+          <div class="card-image pet-1"></div>
+          <h3 class="text-center">Dog and Cat</h3>
+          <p class="detail-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet delectus nesciunt laboriosam quidem in!</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="product-card">
+          <div class="card-image pet-2"></div>
+          <h3 class="text-center">All Dog</h3>
+          <p class="detail-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consequatur delectus dicta possimus quibusdam.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="product-card">
+          <div class="card-image pet-3"></div>
+          <h3 class="text-center">Two Dog</h3>
+          <p class="detail-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis voluptatum animi neque ipsum cupiditate.</p>
+          <a href="#">Read More</a>
+        </div>
+      </section>
+    </div>
+    <!--check out the doggies-->
+    <div class="container-heading">
+      <h1 class="heading">Check out for your beloved doggies here :)</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="/pics/beagle/beagle.jfif" alt="">
+          <h3>beagle</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
+          <a href="#" class="btn">Read mores</a>
+        </div>
+        <div class="box">
+          <img src="/pics/beagle/beagle.jfif" alt="">
+          <h3>beagle</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
+          <a href="#">Read mores</a>
+        </div>
+        <div class="box">
+          <img src="/pics/beagle/beagle.jfif" alt="">
+          <h3>beagle</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
+          <a href="#" class="btn">Read mores</a>
+        </div>
+        <div class="box">
+          <img src="/pics/beagle/beagle.jfif" alt="">
+          <h3>beagle</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
+          <a href="#" class="btn">Read mores</a>
+        </div>
+        <div class="box">
+          <img src="/pics/beagle/beagle.jfif" alt="">
+          <h3>beagle</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio nesciunt labore amet hic.</p>
+          <a href="#" class="btn">Read mores</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  </body>
+<script>
+  AOS.init();
+</script>
+</html>
