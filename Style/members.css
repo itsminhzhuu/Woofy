@@ -1,0 +1,158 @@
+@import url('./display.css');
+
+/* header */
+h1 {
+  color: var(--tomatoes);
+}
+.icon {
+  position: relative;
+  cursor: pointer;
+}
+#search:focus {
+  box-shadow: none;
+  outline: none;
+  color: black;
+}
+.icon span {
+  width: 20px;
+  height: 20px;
+  background-color: var(--pomegranate);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  margin-top: 3px;
+  left: 18px;
+  color: var(--white);
+}
+
+@media (min-width: 1200px) {
+  /* header and nav */
+  .menu {
+    display: flex;
+    margin-top: 10px;
+  }
+  .menu li {
+    padding: 0px 15px;
+    margin-top: 10px;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .menu li a:hover {
+    color: black;
+  }
+}
+/* Members */
+.card-img-tops {
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+   margin: auto;
+   margin-top: 10px;
+}
+.bi {
+   cursor: pointer;
+   font-size: 25px;
+   color: rgb(255,85,0);
+}
+.bi:hover{
+   color: black;
+}
+#card-pics{
+   border-radius: 30px;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+   padding: 10px   
+}
+/* footer */
+footer{
+   background: #343434;
+   padding-top: 50px;
+}
+#container-footer{
+   width: 1140px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+}
+.footer-content{
+   width: 33.3%;
+}
+#h3-footer{
+   font-size: 28px;
+   margin-bottom: 15px;
+   text-align: center;
+   color: white;
+   
+}
+.footer-content p{
+   color: white;
+   margin: auto;
+   padding: 7px;
+   font-size: 18px;
+}
+.footer-content ul{
+   text-align: center;
+}
+.list{
+   padding: 0;
+}
+.list li{
+   width: auto;
+   text-align: center;
+   list-style-type:none;
+   padding: 7px;
+   position: relative;
+}
+.list li::before{
+   content: '';
+   position: absolute;
+   transform: translate(-50%,-50%);
+   left: 50%;
+   top: 100%;
+   width: 0;
+   height: 2px;
+   background: #f18930;
+   transition-duration: .5s;
+}
+.list li:hover::before{
+   width: 70px;
+}
+.social-icons{
+   text-align: center;
+   padding: 0;
+}
+.social-icons li{
+   display: inline-block;
+   text-align: center;
+   padding: 5px;
+}
+.social-icons i{
+   color: white;
+   font-size: 25px;
+}
+.list li a{
+   text-decoration: none;
+}
+a:hover{
+   color: #f18930;
+}
+.social-icons i:hover{
+   color: #f18930;
+}
+.bottom-bar{
+   background: #f18930;
+   text-align: center;
+   padding: 10px 0;
+   margin-top: 50px;
+}
+.bottom-bar p{
+   color: #343434;
+   margin: 0;
+   font-size: 16px;
+   padding: 7px;
+}
