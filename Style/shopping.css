@@ -1,0 +1,48 @@
+@import url('./display.css');
+
+/* Header and nav */
+h1 {
+  color: var(--tomatoes);
+}
+.icon {
+  position: relative;
+  cursor: pointer;
+}
+#search:focus {
+  box-shadow: none;
+  outline: none;
+  color: black;
+}
+.icon span {
+  width: 20px;
+  height: 20px;
+  background-color: var(--pomegranate);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  margin-top: 3px;
+  left: 18px;
+  color: var(--white);
+}
+@media (min-width: 1200px) {
+   /* header and nav */
+   .menu {
+       display: flex;
+       margin-top: 10px;
+   }
+   .menu li {
+       padding: 0px 15px;
+       margin-top: 10px;
+   }
+   .menu li a {
+       text-decoration: none;
+       color: gray;
+       font-size: 17px;
+       font-weight: 600;
+   }
+   .menu li a:hover{
+       color: black;
+   
+   }
+}
