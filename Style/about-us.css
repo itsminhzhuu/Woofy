@@ -5,6 +5,10 @@
 h1 {
   color: var(--tomatoes);
 }
+#bigpage a {
+  text-decoration: none;
+  
+}
 .icon {
   position: relative;
   cursor: pointer;
