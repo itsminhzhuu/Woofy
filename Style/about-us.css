@@ -3,7 +3,10 @@
 /* Header and nav */
 
 h1 {
-  color: var(--tomatoes);
+  color: var(--darkgreen);
+}
+h3 {
+  color: darkgreen;
 }
 #bigpage a {
   text-decoration: none;
@@ -30,6 +33,51 @@ h1 {
   left: 18px;
   color: var(--white);
 }
+
+/*change the search button outline to dark green */
+button.btn.btn-outline-info {
+  border-color: darkgreen !important;
+  color: darkgreen !important;
+}
+
+/*chage the background color to dark green when the button is hovered*/
+button.btn.btn-outline-info:hover {
+  background-color: darkgreen !important;
+  color: white !important;
+}
+
+/* Default state for the search input */
+#search {
+  border: 1px solid darkgreen;
+  background-color: white;
+  color: darkgreen; 
+}
+
+/* Change the border color on hover */
+#search:hover {
+  border-color: darkgreen; 
+  background-color: white; 
+}
+
+/* Change the border color when the input is focused (clicked) */ 
+#search:focus {
+  border-color: darkgreen; 
+  background-color: white; 
+  outline: none; 
+}
+
+/* Change the placeholder color when focused */
+#search::placeholder {
+  color: darkgreen; 
+}
+
+/* Change the placeholder color when not focused */
+#search::placeholder {
+  color: darkgray; 
+}
+
+
+
 @media (min-width: 1200px) {
   /* header and nav */
   .menu {
@@ -72,7 +120,7 @@ h1 {
 }
 .content-section .content h3 {
   margin-top: 20px;
-  color: blue;
+  color: darkgreen;
 }
 .content-section .content p {
   margin-top: 10px;
@@ -93,14 +141,14 @@ h1 {
   border-radius: 50px;
 }
 .content-section .content .button a:hover {
-  background-color: #a52a2a;
+  background-color: darkgreen;
   color: var(--white);
 }
 .content-section .social  {
   margin-top: 20px;
 }
 .content-section .social i {
-  color: #a52a2a;
+  color: darkgreen;
   font-size: 30px;
   padding: 0px 10px;
 }
@@ -118,7 +166,7 @@ h1 {
 }
 /* footer */
 footer{
-  background: #343434;
+  background: white;
   padding-top: 50px;
 }
 #container-footer{
@@ -134,11 +182,11 @@ footer{
   font-size: 28px;
   margin-bottom: 15px;
   text-align: center;
-  color: white;
+  color: darkgreen;
   
 }
 .footer-content p{
-  color: white;
+  color: black;
   margin: auto;
   padding: 7px;
   font-size: 18px;
@@ -164,7 +212,7 @@ footer{
   top: 100%;
   width: 0;
   height: 2px;
-  background: #f18930;
+  background: darkgreen;
   transition-duration: .5s;
 }
 .list li:hover::before{
@@ -180,26 +228,26 @@ footer{
   padding: 5px;
 }
 .social-icons i{
-  color: white;
+  color: black;
   font-size: 25px;
 }
 .list li a{
   text-decoration: none;
 }
 a:hover{
-  color: #f18930;
+  color: darkgreen;
 }
 .social-icons i:hover{
-  color: #f18930;
+  color: darkgreen;
 }
 .bottom-bar{
-  background: #f18930;
+  background: darkgreen;
   text-align: center;
   padding: 10px 0;
   margin-top: 50px;
 }
 .bottom-bar p{
-  color: #343434;
+  color: white;
   margin: 0;
   font-size: 16px;
   padding: 7px;

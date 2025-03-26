@@ -1,7 +1,7 @@
 @import url('./display.css');
 /* Header and nav */
 h1 {
-  color: var(--tomatoes);
+  color: var(--darkgreen);
 }
 #bigpage a {
   text-decoration: none;
@@ -27,6 +27,50 @@ h1 {
   left: 18px;
   color: var(--white);
 }
+
+/*change the search button outline to dark green */
+button.btn.btn-outline-info {
+   border-color: darkgreen !important;
+   color: darkgreen !important;
+}
+
+/*chage the background color to dark green when the button is hovered*/
+button.btn.btn-outline-info:hover {
+   background-color: darkgreen !important;
+   color: white !important;
+}
+
+/* Default state for the search input */
+#search {
+   border: 1px solid darkgreen;
+   background-color: white;
+   color: darkgreen; 
+}
+
+/* Change the border color on hover */
+#search:hover {
+   border-color: darkgreen; 
+   background-color: white; 
+}
+
+/* Change the border color when the input is focused (clicked) */ 
+#search:focus {
+   border-color: darkgreen; 
+   background-color: white; 
+   outline: none; 
+}
+
+/* Change the placeholder color when focused */
+#search::placeholder {
+   color: darkgreen; 
+}
+
+/* Change the placeholder color when not focused */
+#search::placeholder {
+   color: darkgray; 
+}
+
+
 .menu {
   display: flex;
   margin-top: 10px;
@@ -75,7 +119,7 @@ h1 {
    margin-bottom: 5px;
    font-size: 30px;
    font-weight: 500;
-   color: #69275c;
+   color: darkgreen;
    text-align: center;
 }
 .contact-form .main{
@@ -111,7 +155,7 @@ input{
 }
 .btn:hover,
 button:hover{
-   color: #97359c;
+   color: darkgreen;
    transition: 0.5s ease;
 }
 .contact-form form{
@@ -122,7 +166,7 @@ textarea{
    outline: none;
    margin-bottom: 15px;
    font-stretch: 16px;
-   color: #999;
+   color: black;
    padding: 14px 20px;
    width: 100%;
    display: inline-block;
@@ -133,17 +177,17 @@ textarea{
 }
 .contact-form input:focus{
    background: transparent;
-   border: 1px solid #69275c;
+   border: 1px solid darkgreen;
 }
 .contact-form button{
    font-size: 18px;
    color: #fff;
    width: 100%;
-   background: #69275c;
+   background: darkgreen;
    font-weight: 600;
    transition: 0.3s ease;
    padding: 14px 15px;
-   border: 1px solid #69275c;
+   border: 1px solid darkgreen;
 
 }
 
