@@ -15,68 +15,94 @@
    </head>
    <body>
       <div class="wrapper">
-         <div class="form-header">
-            <div class="titles">
-               <div class="title-login">Login</div>
-               <div class="title-register">Register</div>
+         <nav class="nav">
+            <div class="nav-logo">
+               <p>LOGO .</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+               <ul>
+                  <li><a href="#" class="link active">Home</a></li>
+                  <li><a href="/builds/shopping.html" class="link">Shop</a></li>
+                  <li><a href="/builds/members.html" class="link">Members</a></li>
+                  <li><a href="/builds/about-us.html" class="link">About</a></li>
+               </ul>
+            </div>
+            <div class="nav-button">
+               <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+               <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+               <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+         </nav>
+         <!----------------------------- Form box ----------------------------------->
+         <div class="form-box">
+
+            <!------------------- login form -------------------------->
+            <div class="login-container" id="login">
+               <div class="top">
+                  <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                  <header>Login</header>
+               </div>
+               <div class="input-box">
+                  <input type="text" class="input-field" placeholder="Username or Email">
+                  <i class="bx bx-user"></i>
+               </div>
+               <div class="input-box">
+                  <input type="password" class="input-field" placeholder="Password">
+                  <i class="bx bx-lock-alt"></i>
+               </div>
+               <div class="input-box">
+                  <input type="submit" class="submit" value="Sign In">
+               </div>
+               <div class="two-col">
+                  <div class="one">
+                     <input type="checkbox" id="login-check">
+                     <label for="login-check"> Remember Me</label>
+                  </div>
+                  <div class="two">
+                     <label><a href="#">Forgot password?</a></label>
+                  </div>
+               </div>
+            </div>
+            <!------------------- registration form -------------------------->
+            <div class="register-container" id="register">
+               <div class="top">
+                  <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                  <header>Sign Up</header>
+               </div>
+               <div class="two-forms">
+                  <div class="input-box">
+                     <input type="text" class="input-field" placeholder="Firstname">
+                     <i class="bx bx-user"></i>
+                  </div>
+                  <div class="input-box">
+                     <input type="text" class="input-field" placeholder="Lastname">
+                     <i class="bx bx-user"></i>
+                  </div>
+               </div>
+               <div class="input-box">
+                  <input type="text" class="input-field" placeholder="Email">
+                  <i class="bx bx-envelope"></i>
+               </div>
+               <div class="input-box">
+                  <input type="password" class="input-field" placeholder="Password">
+                  <i class="bx bx-lock-alt"></i>
+               </div>
+               <div class="input-box">
+                  <input type="submit" class="submit" value="Register">
+               </div>
+               <div class="two-col">
+                  <div class="one">
+                     <input type="checkbox" id="register-check">
+                     <label for="register-check"> Remember Me</label>
+                  </div>
+                  <div class="two">
+                     <label><a href="#">Terms & conditions</a></label>
+                  </div>
+               </div>
             </div>
          </div>
-         <!--login Form-->
-         <form action="#" class="login-form" autocomplete="off">
-            <div class="input-box">
-               <input type="text" class="input-field" id="log-email" required>
-               <label for="log-email" class="label">Email</label>
-               <i class='bx bx-envelope icon'></i>
-            </div>
-            <div class="input-box">
-               <input type="password" class="input-field" id="log-pass" required>
-               <label for="log-pass" class="label">Password</label>
-               <i class='bx bx-lock-alt icon'></i>
-            </div>
-            <div class="form-cols">
-               <div class="col-1"></div>
-               <div class="col-2">
-                  <a href="#">Forgot password?</a>
-               </div>
-            </div>
-            <div class="input-box">
-               <button class="btn-submit" id="SignInBtn">Sign In<i class='bx bx-log-in'></i></button>
-            </div>
-            <div class="swith-form">
-               <span>Don't have an account? <a href="#" onclick="registerFunction()">Register</a></span>
-            </div>
-         </form>
-         <!--Register Form-->
-         <form action="#" class="register-form" autocomplete="off">
-            <div class="input-box">
-               <input type="text" class="input-field" id="reg-name" required>
-               <label for="reg-name" class="label">Username</label>
-               <i class='bx bx-user icon'></i>
-            </div>
-            <div class="input-box">
-               <input type="text" class="input-field" id="reg-email" required>
-               <label for="reg-email" class="label">Email</label>
-               <i class='bx bx-envelope icon'></i>
-            </div>
-            <div class="input-box">
-               <input type="password" class="input-field" id="reg-pass" required>
-               <label for="reg-pass" class="label">Password</label>
-               <i class='bx bx-lock-alt icon'></i>
-            </div>
-            <div class="form-cols">
-               <div class="col-1">
-                  <input type="checkbox" id="agree">
-                  <label for="agree">agree to terms & conditions</label>
-               </div>
-               <div class="col-2"></div>
-            </div>
-            <div class="input-box">
-               <button class="btn-submit" id="SignUpBtn">Sign Up<i class='bx bx-log-out'></i></button>
-            </div>
-            <div class="swith-form">
-               <span>Already have an account? <a href="#" onclick="loginFunction()">Login</a></span>
-            </div>
-         </form>
       </div>
    </body>
 </html>

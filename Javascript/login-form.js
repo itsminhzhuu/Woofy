@@ -1,32 +1,28 @@
-const loginForm = document.querySelector(".login-form");
-const registerForm = document.querySelector(".register-form");
-const wrapper = document.querySelector(".wrapper");
-const loginTitle = document.querySelector(".title-login");
-const registerTitle = document.querySelector(".title-register");
-const singUpBtn = document.querySelector("#SignUpBtn");
-const singInBtn = document.querySelector("#SignInBtn");
-
-function loginFunction () {
-   loginForm.style.left = "50%";
-   loginForm.style.opacity = 1;
-   registerForm.style.left = "150%";
-   registerForm.style.opacity = 0;
-   wrapper.style.height = "500px";
-   loginTitle.style.top = "50%";
-   loginTitle.style.opacity = 1;
-   registerTitle.style.top = "50px";
-   registerTitle.style.opacity = 0;
-   
+function myMenuFunction() {
+  var i = document.getElementById('navMenu');
+  if (i.className === 'nav-menu') {
+    i.className += ' responsive';
+  } else {
+    i.className = 'nav-menu';
+  }
 }
-function registerFunction () {
-   loginForm.style.left = "-50%";
-   loginForm.style.opacity = 0;
-   registerForm.style.left = "50%";
-   registerForm.style.opacity = 1;
-   wrapper.style.height = "580px";
-   loginTitle.style.top = "-60px";
-   loginTitle.style.opacity = 0;
-   registerTitle.style.top = "50%";
-   registerTitle.style.opacity = 1;
-   
+var a = document.getElementById('loginBtn');
+var b = document.getElementById('registerBtn');
+var x = document.getElementById('login');
+var y = document.getElementById('register');
+function login() {
+  x.style.left = '4px';
+  y.style.right = '-520px';
+  a.className += ' white-btn';
+  b.className = 'btn';
+  x.style.opacity = 1;
+  y.style.opacity = 0;
+}
+function register() {
+  x.style.left = '-510px';
+  y.style.right = '5px';
+  a.className = 'btn';
+  b.className += ' white-btn';
+  x.style.opacity = 0;
+  y.style.opacity = 1;
 }
