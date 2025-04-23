@@ -54,10 +54,14 @@
             <div class="main">
                <div class="content">
                   <h2>Contact Us</h2>
-                  <form action="#" method="post">
-                     <input type="text" name="name" placeholder="Enter Your Name">
-                     <input type="email" name="name" placeholder="Enter Your Email">
-                     <textarea name="message" placeholder="Your Message"></textarea>
+                  <form action="https://formsubmit.co/pheaknarin18@gmail.com" method="POST">
+                     <!-- Hidden FormSubmit features -->
+                     <input type="hidden" name="_captcha" value="false">
+                     <input type="hidden" name="_template" value="table">
+
+                     <input type="text" name="name" placeholder="Enter Your Name" required>
+                     <input type="email" name="email" placeholder="Enter Your Email" required>
+                     <textarea name="message" placeholder="Your Message" required></textarea>
                      <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
                   </form>
                </div>

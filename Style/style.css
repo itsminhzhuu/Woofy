@@ -203,20 +203,20 @@ p{
 }
 
 .product-card:hover  {
-    background-color: var(gray);
+    background-color: var(--gray);
     color: black;
     cursor: pointer;
     transform: scale(1.03);
     transition: all 1s ease;
 }
 .pet-1 {
-    background-image: url('/pics/Featured-product/Dog\ and\ cat.jfif');
+    background-image: url('/pics/Featured-product/Pomeranian-4.jfif');
 }
 .pet-2 {
-    background-image: url('/pics/Featured-product/alldog.jfif');
+    background-image: url('/pics/Featured-product/bichon-4.webp');
 }
 .pet-3{
-    background-image: url('/pics/Featured-product/twodog.jfif');
+    background-image: url('/pics/Featured-product/Bolognese-4.jpg');
 }
 
 /*check out the doggies */
