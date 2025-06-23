@@ -33,7 +33,7 @@
           </button>
           <div id="show" class="collapse navbar-collapse justify-content-evenly">
             <ul class="list-unstyled menu">
-              <li><a class="text-success" href="view.html">Home</a></li>
+              <li><a class="text-success" href="index.html">Home</a></li>
               <li><a href="/builds/about-us.html">About</a></li>
               <li><a href="/builds/shopping.html">Shop</a></li>
               <li><a href="/builds/members.html">Members</a></li>
@@ -84,6 +84,18 @@
         <div class="row">
           <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
             <div class="card h-100" id="card-clip">
+              <div class="clip-icon bg-primary">  
+                <span class="bg-primary"></span>
+                <i class="fa-solid fa-credit-card fs-1 text-white"></i>
+              </div>
+              <div class="card-body mt-2 h-100">
+                <p class="fs-4 text-center fw-bold">Flexible Payments</p>
+                <p class="text-center">Click to choose a Payment Options</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+            <div class="card h-100" id="card-clip">
               <div class="clip-icon">  
                 <span></span>
                 <i class="fa-solid fa-paw fs-1 text-white"></i>
@@ -106,18 +118,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
-            <div class="card h-100" id="card-clip">
-              <div class="clip-icon bg-primary">  
-                <span class="bg-primary"></span>
-                <i class="fa-solid fa-credit-card fs-1 text-white"></i>
-              </div>
-              <div class="card-body mt-2 h-100">
-                <p class="fs-4 text-center fw-bold">Flexible Payments</p>
-                <p class="text-center">Choose from various payment options to suit your budget</p>
-              </div>
-            </div>
-          </div>
+          
           <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
             <div class="card h-100" id="card-clip">
               <div class="clip-icon bg-danger">  
@@ -270,9 +271,10 @@
       <div class="container" id="container-footer">
         <div class="footer-content">
           <h3 id="h3-footer">Contact Us</h3>
-          <p class="letter-p">Email: woofy@gmail.com</p>
-          <p class="letter-p">Phone:+855 86 769 670</p>
-          <p class="letter-p">Address: Russian Federation Boulevard, Teuk Laak 1, Toul Kork, Phnom Penh (RUPP). Postcode: 120404.</p>
+          <p class="letter-p">Email: pheaknarin18@gmail.com</p>
+          <p class="letter-p">Phone:+855 96 911 4280</p>
+          <p class="letter-p">Address: Russian Federation Boulevard, Teuk Laak 1, Toul Kork, Phnom Penh (RUPP).</p>
+          <p>Postcode: 120404.</p>
         </div>
         <div class="footer-content">
           <h3 id="h3-footer">Quick Links</h3>
@@ -285,17 +287,258 @@
         </div>
         <div class="footer-content">
           <h3 id="h3-footer">Follow us via</h3>
-          <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-telegram"></i></a></li>
-          </ul>
+            <div class="social-icons fade-in-delay d-flex gap-3">
+            <a href="https://www.facebook.com/itsminhzhuu/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/itsminhzhuu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me/itsminhzhuu" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.linkedin.com/in/pheakna-rin-bb7668275/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:someone@pheaknarin18@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/itsminhzhuu" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.tiktok.com/@itsminhzhuu?_t=ZS-8xNaVSMaSnp&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
         </div>
       </div>
       <div class="bottom-bar">
         <p>&copy; 2025 Woofy Store - All Rights Reserved </p>
       </div>
     </footer>
+    <!-- Flexible Payment Options Modal -->
+<div
+  class="modal fade"
+  id="paymentOptionsModal"
+  tabindex="-1"
+  aria-labelledby="paymentOptionsLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal header -->
+      <div class="modal-header" id="modal-header">
+        <h5 class="modal-title" id="paymentOptionsLabel">Choose a Payment Option</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          id="closeBtn"
+        ></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" id="modal-body">
+        <form id="paymentForm">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="paymentOption"
+              id="acleda"
+              value="acleda"
+            />
+            <label class="form-check-label" for="acleda">Acleda Bank</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="paymentOption"
+              id="aba"
+              value="aba"
+            />
+            <label class="form-check-label" for="aba">ABA Bank</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="paymentOption"
+              id="wing"
+              value="wing"
+            />
+            <label class="form-check-label" for="wing">Wing Bank</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="paymentOption"
+              id="others"
+              value="others"
+            />
+            <label class="form-check-label" for="others">Others</label>
+          </div>
+          <div class="mt-2" id="otherBankInput" style="display:none;">
+            <input
+              type="text"
+              class="form-control"
+              id="otherBankName"
+              placeholder="Please specify your bank/payment method"
+            />
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer" id="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+          id="closeFooterBtn"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-success" id="confirmBtn">
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const flexibleCard = document.querySelector(".fa-credit-card").closest("#card-clip");
+  if (flexibleCard) {
+    flexibleCard.style.cursor = "pointer";
+    flexibleCard.setAttribute("data-bs-toggle", "modal");
+    flexibleCard.setAttribute("data-bs-target", "#paymentOptionsModal");
+  }
+
+  const radios = document.querySelectorAll('input[name="paymentOption"]');
+  const otherInputDiv = document.getElementById("otherBankInput");
+  const confirmBtn = document.getElementById("confirmBtn");
+  const modalBody = document.getElementById("modal-body");
+  const modalHeader = document.getElementById("modal-header");
+  const modalFooter = document.getElementById("modal-footer");
+
+  radios.forEach((radio) => {
+    radio.addEventListener("change", () => {
+      if (radio.value === "others" && radio.checked) {
+        otherInputDiv.style.display = "block";
+      } else {
+        otherInputDiv.style.display = "none";
+      }
+    });
+  });
+
+  confirmBtn.addEventListener("click", () => {
+    const selectedOption = document.querySelector('input[name="paymentOption"]:checked');
+if (!selectedOption) {
+  alert("Please select a payment option.");
+  return;
+}
+
+const qrCodes = {
+  acleda: "/pics/qr.jpg",
+  aba: "/pics/qr.jpg",
+  wing: "/pics/qr.jpg",
+  others: "/pics/qr.jpg" // Add a default QR for others
+};
+
+if (selectedOption.value === "others") {
+  const otherBank = document.getElementById("otherBankName").value.trim();
+  if (!otherBank) {
+    alert("Please specify your bank/payment method.");
+    return;
+  }
+
+  // ✅ Show your QR and mention the custom bank name
+  showQRCode(qrCodes["others"], `You chose: ${otherBank}. Please scan the QR to complete payment.`);
+  return;
+}
+
+// ✅ For standard banks
+const qrUrl = qrCodes[selectedOption.value];
+showQRCode(qrUrl, `You chose: ${selectedOption.value.toUpperCase()}. Please scan to pay.`);
+
+  });
+
+  // Function to replace modal content with QR code and instructions
+  function showQRCode(imageUrl, message) {
+    // Clear modal body
+    modalBody.innerHTML = "";
+
+    // Hide header close button for better UX if needed
+    // document.getElementById("closeBtn").style.display = "none";
+
+    // Create container for QR code
+    const container = document.createElement("div");
+    container.classList.add("text-center");
+
+    if (message) {
+      const p = document.createElement("p");
+      p.textContent = message;
+      container.appendChild(p);
+    }
+
+    if (imageUrl) {
+      const img = document.createElement("img");
+      img.src = imageUrl;
+      img.alt = "Payment QR Code";
+      img.style.maxWidth = "250px";
+      img.style.marginTop = "1rem";
+      container.appendChild(img);
+    }
+
+    modalBody.appendChild(container);
+
+    // Change footer buttons: show only Close, hide Confirm
+    modalFooter.querySelector(".btn-success").style.display = "none";
+  }
+
+  // Reset modal content when closed so user can pick again next time
+  const paymentModal = document.getElementById("paymentOptionsModal");
+  paymentModal.addEventListener("hidden.bs.modal", () => {
+    modalFooter.querySelector(".btn-success").style.display = "inline-block";
+
+    // Restore modal body to original form HTML (you can store it on load)
+    modalBody.innerHTML = `
+      <form id="paymentForm">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentOption" id="acleda" value="acleda" />
+          <label class="form-check-label" for="acleda">Acleda Bank</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentOption" id="aba" value="aba" />
+          <label class="form-check-label" for="aba">ABA Bank</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentOption" id="wing" value="wing" />
+          <label class="form-check-label" for="wing">Wing Bank</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentOption" id="others" value="others" />
+          <label class="form-check-label" for="others">Others</label>
+        </div>
+        <div class="mt-2" id="otherBankInput" style="display:none;">
+          <input
+            type="text"
+            class="form-control"
+            id="otherBankName"
+            placeholder="Please specify your bank/payment method"
+          />
+        </div>
+      </form>
+    `;
+
+    // Re-add event listener for “Others” toggle on restored inputs
+    const newRadios = modalBody.querySelectorAll('input[name="paymentOption"]');
+    const newOtherInputDiv = modalBody.querySelector("#otherBankInput");
+
+    newRadios.forEach((radio) => {
+      radio.addEventListener("change", () => {
+        if (radio.value === "others" && radio.checked) {
+          newOtherInputDiv.style.display = "block";
+        } else {
+          newOtherInputDiv.style.display = "none";
+        }
+      });
+    });
+  });
+});
+</script>
+
   </body>
 <script>
   AOS.init();

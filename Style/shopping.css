@@ -93,13 +93,15 @@ button.btn.btn-outline-info:hover {
 }
 /*product-show-name*/
 #product-show-name h1 {
-  color: var(--pomegranate);
-  margin-left: 80px;
+  color: darkgreen;
+  margin-left: 290px;
+  padding: 20px;
   
 }
 /*Show Product Samoyed*/
 #img-1{
   height: 220px;
+  color: darkgreen;
 }
 /* show product Pomeranian */
 #img-2 {
@@ -199,10 +201,15 @@ footer{
 .list li:hover::before{
   width: 70px;
 }
-.social-icons{
-  text-align: center;
-  padding: 0;
+.social-icons {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
+
 .social-icons li{
   display: inline-block;
   text-align: center;

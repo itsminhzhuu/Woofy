@@ -303,10 +303,15 @@ footer{
 .list li:hover::before{
     width: 70px;
 }
-.social-icons{
+.social-icons {
     text-align: center;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
+
 .social-icons li{
     display: inline-block;
     text-align: center;
@@ -337,16 +342,6 @@ a:hover{
     font-size: 16px;
     padding: 7px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* media */

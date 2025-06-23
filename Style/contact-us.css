@@ -110,9 +110,8 @@ button.btn.btn-outline-info:hover {
 .contact-form h1{
    text-align: center;
    font-size: 2.5rem;
-   font-weight: 400;
-   color: #fff;
-   font-family: 'poppins';
+   font-weight: 500;
+   color: darkgreen;
 }
 .contact-form h2{
    line-height: 40px;

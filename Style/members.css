@@ -172,9 +172,13 @@ footer{
 .list li:hover::before{
    width: 70px;
 }
-.social-icons{
-   text-align: center;
-   padding: 0;
+.social-icons {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .social-icons li{
    display: inline-block;
