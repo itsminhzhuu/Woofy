@@ -7,11 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body {
-<<<<<<< HEAD
-  background: url('/pics/bg.png');
-=======
-  background: white;
->>>>>>> e3f788ae98dabd5e24e72d64dd62904b4dc0cfa1
+  background: url('/pics/bg1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,7 +18,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 110vh;
-  background:white;
 }
 .nav {
   position: fixed;
@@ -49,7 +44,7 @@ body {
 .nav-menu ul li .link {
   text-decoration: none;
   font-weight: 500;
-  color: green;
+  color: rgb(255, 255, 255);
   padding-bottom: 15px;
   margin: 0 25px;
 }
@@ -75,7 +70,7 @@ body {
   margin-left: 15px;
 }
 .btn.white-btn {
-  background: darkgreen;
+  background: grey;
 }
 .btn.btn.white-btn:hover {
   background: grey;
@@ -166,7 +161,7 @@ header {
   border: none;
   border-radius: 30px;
   outline: none;
-  background: green;
+  background: grey;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }

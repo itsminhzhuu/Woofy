@@ -34,11 +34,14 @@
                   <div class="d-flex">
                      <input type="text" placeholder="Search" class="form-control" id="search">
                      <button class="btn btn-outline-info mx-3">Search</button>
-                     <div class="d-flex icon">
-                        <i class="fa-solid fa-bag-shopping fs-2"></i>
-                        <span>0</span>
-                        <a href="/builds/login-form.html"><i class="fa-solid fa-user fs-2 mx-3 text-dark"></i></a>
-                        <i class="fa-solid fa-heart fs-2"></i>
+                     <div class="d-flex icon align-items center">
+                        <i id="cart-icon" class="fa-solid fa-cart-shopping fs-2 position-relative" 
+                           style="cursor: pointer;"
+                           data-bs-toggle="modal"
+                           data-bs-target="#cartModal">
+                        </i>
+                        <span id="cart-count" class="start-50 translate-middle badge bg-success">0</span>
+                        <a href="/builds/login-form.html"><i class="fa-solid fa-user fs-2 mx-2 text-dark"></i></a>
                      </div>
                   </div>
                </div>
