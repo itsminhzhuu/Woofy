@@ -72,10 +72,6 @@ button.btn.btn-outline-info:hover {
     color: darkgray; 
 }
 
-
-
-
-
 /* Middle-banner */
 .middle-banner{
     margin-top: 80px;
@@ -343,19 +339,79 @@ a:hover{
     padding: 7px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> e3f788ae98dabd5e24e72d64dd62904b4dc0cfa1
 /* media */
 @media (max-width: 576px){
-    
+    /* Add mobile responsiveness without changing desktop styles */
 
+    #container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .product-card {
+        width: 100%;
+        margin: 10px 0;
+        height: auto; /* let height adjust */
+    }
+    .product-card a {
+        margin: 15px auto;
+        width: 90%;
+        padding: 12px;
+    }
+    .image img {
+        margin-left: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    h2, p {
+        text-align: center;
+        padding: 0 10px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #middle-container {
+        padding: 0 10px;
+    }
+    .footer-content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #container-footer {
+        width: 100%;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    #button-checkout {
+        width: 100px;
+    }
+    #card-title-h5 {
+        font-size: 24px;
+    }
+    #card-text-p {
+        font-size: 16px;
+    }
+    .clip-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .clip-icon > span {
+        width: 70px;
+        height: 70px;
+        top: 35px;
+        left: 10px;
+    }
+    #card-clip {
+        padding: 15px 0;
+    }
 }
+
 @media (min-width: 768px){
-    
-
+    /* Your existing or empty */
 }
+
 @media (min-width: 992px) {
     .menu li{
         padding: 5px 0px;
@@ -366,7 +422,6 @@ a:hover{
         font-size: 18px;
         font-weight: 600 ;
     }
-
 }   
 @media (min-width: 1200px) {
     /* header and nav */
